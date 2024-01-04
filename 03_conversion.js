@@ -28,3 +28,16 @@ console.log(booleanIsLoggedIn);
 console.log(typeof booleanIsLoggedIn);
 
 // similar for strings and others
+
+// <----------------operations----------------->
+
+console.log("3" + 4 + 5); //gives 345 treat all as string
+
+console.log(3 + 4 + "5"); // add first later as string
+
+// <------ Prefix and postfix operator
+let f = 5;
+let g = ++f;
+console.log(`f is ${f} g is ${g}`);
+let h = f++;
+console.log(`f is ${f} h is ${g}`);

@@ -11,5 +11,3 @@
 // symbol => unique
 
 // object
-
-typeof
