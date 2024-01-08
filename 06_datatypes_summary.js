@@ -5,6 +5,17 @@ primitive and non-primitive or reference type */
  original value not modified*/
 
 // types:  String , Number, Boolean,  null, undefined, Symbol,  BigInt
+
 /*NON-Primitive : Array, Object, Function  are reference type */
 
 // in js decimal no 9.8 also considered as number not float
+
+// <-----------------------Stack and heap memory allocation---------------->
+// Stack(primitive type) Heap(Non-primitive)
+
+let userOne = "shivam";
+let userTwo = userOne;
+userTwo = "golu";
+
+console.log(userOne);
+console.log(userTwo);
