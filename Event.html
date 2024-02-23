@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body
+    style="
+      height: 100vh;
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    <div
+      id="red"
+      style="
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+      "
+    >
+      <div
+        id="yellow"
+        style="
+          height: 150px;
+          width: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: yellow;
+        "
+      >
+        <div
+          id="blue"
+          style="
+            height: 100px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blue;
+          "
+        ></div>
+      </div>
+    </div>
+
+    <script>
+      // learning event capturing and event bubbling
+      document.getElementById("red").addEventListener(
+        "click",
+        function (e) {
+          console.log("clicked inside the red div");
+        },
+        true
+      );
+
+      document.getElementById("blue").addEventListener(
+        "click",
+        function (e) {
+          console.log("clicked inside the blue div");
+          // e.stopPropagation();
+        }, 
+        false
+      );
+    </script>
+  </body>
+</html>
