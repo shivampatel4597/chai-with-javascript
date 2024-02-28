@@ -36,13 +36,15 @@
 
 // ------splice() and slice()-----------------
 
-// NOTE:  slice(1,4)  takes 1 to 3 exclude 4  not mutate original array
-//        splice(1,4)  takes 1 to 4   mutates original array
+// NOTE:  slice(1,4)  excludes 1 takes 2 to 4 not   mutate original array
+//       
 
-// let array = [1, 2, 3, 4, 5];
-// let newArr = array.slice(1, 4);
-// console.log(array);
-// console.log(newArr);
+let array = [1, 2, 3, 4, 5];
+// let newArr = array.splice(no of items, 4);
+let newArr = array.splice(3, 5);
+console.log(array);
+console.log(newArr);
+console.log(array);
 
 
 
